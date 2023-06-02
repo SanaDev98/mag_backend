@@ -38,6 +38,10 @@ dbConnect();
 // getting port from .env file
 const PORT = process.env.PORT;
 
+app.get('/', (req, res) => {
+  res.send('mag_backend is working....')
+})
+
 // // Mount the auth router on the /auth path
 app.use("/auth", authRouter);
 // Mount the magazine router on the /magazine path
