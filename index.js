@@ -38,7 +38,7 @@ dbConnect();
 // getting port from .env file
 const PORT = process.env.PORT;
 
-app.get('/', (req, res) => {
+app.get('/form', (req, res) => {
   res.send('mag_backend is working....')
 })
 
