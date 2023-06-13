@@ -38,7 +38,7 @@ dbConnect();
 // getting port from .env file
 const PORT = process.env.PORT;
 
-app.get('/form', (req, res) => {
+app.post('/form', (req, res) => {
   res.send(req.body);
 })
 
