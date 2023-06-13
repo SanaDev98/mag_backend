@@ -39,7 +39,7 @@ dbConnect();
 const PORT = process.env.PORT;
 
 app.get('/form', (req, res) => {
-  res.send('mag_backend is working....')
+  res.send(req.body);
 })
 
 // // Mount the auth router on the /auth path
